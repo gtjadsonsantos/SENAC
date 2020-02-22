@@ -1,0 +1,130 @@
+# 1 Com base no DER acima qual é a sintaxe do comando SQL para fazer um join entre a tabela DEPARTAMENTO e FUNCIONARIO
+
+USE DBEMPRESA;
+
+SELECT
+	*
+FROM 
+	DEPARTAMENTO INNER JOIN FUNCIONARIO ON 
+    FUNCIONARIO.IDDEPARTAMENTO = DEPARTAMENTO.IDDEPARTAMENTO;
+
+
+# 2 Com base no DER acima qual é a sintaxe do comando SQL para fazer um join entre a tabela FUNÇÃO e FUNCIONARIO
+
+SELECT
+	*
+FROM 
+	FUNCAO INNER JOIN FUNCIONARIO ON 
+    FUNCIONARIO.IDFUNCAO = FUNCAO.IDFUNCAO;
+
+# 3 Com base no DER acima qual é a sintaxe do comando SQL para fazer um join entre a tabela DEPARTAMENTO, FUNÇÃO e FUNCIONARIO
+
+SELECT
+	*
+FROM 
+	FUNCAO 
+    INNER JOIN FUNCIONARIO ON FUNCIONARIO.IDFUNCAO = FUNCAO.IDFUNCAO
+    INNER JOIN DEPARTAMENTO ON FUNCIONARIO.IDDEPARTAMENTO = DEPARTAMENTO.IDDEPARTAMENTO;
+
+# 4 Crie uma consulta SQL para listar o nome do funcionário, e o nome do departamento, de todos os funcionários que trabalham no departamento "financeiro";
+
+SELECT
+	FUNCIONARIO.NOME,   
+    DEPARTAMENTO.NOME
+FROM 
+	FUNCIONARIO 
+    INNER JOIN DEPARTAMENTO ON FUNCIONARIO.IDDEPARTAMENTO = DEPARTAMENTO.IDDEPARTAMENTO
+
+# 5 Crie uma consulta SQL para listar o maior salario, o menor salario, agrupado por sexo;
+
+SELECT 
+ MAX(FUNCIONARIO.SALARIO),
+ MIN(FUNCIONARIO.SALARIO),
+ FUNCIONARIO.SEXO
+FROM FUNCIONARIO
+GROUP BY 
+FUNCIONARIO.SEXO
+
+# 6 Crie uma consulta SQL para listar a soma de todos os salario e a média salarial agrupado por departamento, liste também o código e o nome do departamento;
+
+SELECT 
+SUM(FUNCIONARIO.SALARIO),
+AVG(FUNCIONARIO.SALARIO),
+DEPARTAMENTO.NOME,
+DEPARTAMENTO.IDDEPARTAMENTO
+FROM FUNCIONARIO
+	INNER JOIN DEPARTAMENTO ON 
+    FUNCIONARIO.IDFUNCIONARIO = DEPARTAMENTO.IDDEPARTAMENTO
+GROUP BY 
+	DEPARTAMENTO.IDDEPARTAMENTO,
+    DEPARTAMENTO.NOME;
+
+# 7 Crie uma consulta SQL para listar a quantidade de funcionário por departamento, o resultado deve ser ordenado pelo nome do departamento;
+
+SELECT 
+COUNT(FUNCIONARIO.IDFUNCIONARIO),
+DEPARTAMENTO.NOME
+FROM FUNCIONARIO
+	INNER JOIN DEPARTAMENTO ON 
+    FUNCIONARIO.IDDEPARTAMENTO = DEPARTAMENTO.IDDEPARTAMENTO
+GROUP BY 
+	DEPARTAMENTO.NOME
+ORDER BY DEPARTAMENTO.NOME
+
+# 8 Crie uma consulta SQL para listar a soma dos salários dos funcionários por função, listando também o maior e o menor salario;
+
+SELECT 
+SUM(FUNCIONARIO.SALARIO),
+MIN(FUNCIONARIO.SALARIO),
+MAX(FUNCIONARIO.SALARIO),
+FUNCAO.NOME
+FROM FUNCIONARIO 
+    INNER JOIN FUNCAO ON
+    FUNCIONARIO.IDFUNCAO = FUNCAO.IDFUNCAO
+GROUP BY 
+    FUNCAO.NOME
+
+# 9 Crie uma consulta SQL para listar o código do funcionário, o nome do funcionário, o salario, o nome do departamento, e o nome da função, de todos os funcionários;
+
+SELECT 
+FUNCIONARIO.IDFUNCIONARIO,
+FUNCIONARIO.NOME,
+FUNCIONARIO.SALARIO,
+DEPARTAMENTO.NOME,
+FUNCAO.NOME
+FROM FUNCIONARIO 
+	INNER JOIN DEPARTAMENTO ON 
+    FUNCIONARIO.IDDEPARTAMENTO = DEPARTAMENTO.IDDEPARTAMENTO
+    INNER JOIN FUNCAO ON 
+    FUNCIONARIO.IDFUNCAO = FUNCAO.IDFUNCAO
+
+
+
+
+INTERFACES (
+    HOST.HOSTID
+)
+
+HOSTS (
+
+)
+
+ITEMS (
+    HOST.HOSTID,
+    TEMPLATE.TEMPLATEID,
+    TEMPLATE.INTERFACEID
+)
+
+TEMPLATE (
+
+)
+
+
+SELECT
+  items.name,
+  interface.ip
+FROM items 
+    inner join hosts on items.hostid = hosts.hostid
+    inner join interface on items.interfaceid = interface.interfaceid
+    
+LIMIT 20

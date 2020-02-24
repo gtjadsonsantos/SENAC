@@ -98,33 +98,3 @@ FROM FUNCIONARIO
     INNER JOIN FUNCAO ON 
     FUNCIONARIO.IDFUNCAO = FUNCAO.IDFUNCAO
 
-
-
-
-INTERFACES (
-    HOST.HOSTID
-)
-
-HOSTS (
-
-)
-
-ITEMS (
-    HOST.HOSTID,
-    TEMPLATE.TEMPLATEID,
-    TEMPLATE.INTERFACEID
-)
-
-TEMPLATE (
-
-)
-
-
-SELECT
-  items.name,
-  interface.ip
-FROM items 
-    inner join hosts on items.hostid = hosts.hostid
-    inner join interface on items.interfaceid = interface.interfaceid
-    
-LIMIT 20

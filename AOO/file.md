@@ -1,12 +1,8 @@
-## POO -> AOO
+# AOO
 
-Divisão  do código + lógica e encapsulamento
+## PILATES 
 
-muito + fácil, reaproveitamento de código, divisão do trabalho
-
-
-- Desvantagem ( OO x Estruturada )
-
-Aprendizado + complicado  + memória e processamento
-
-
+- ABSTRAÇÃO 
+- HERANÇA
+- POLIMORFISMO
+- ENCAPSULAMENTO

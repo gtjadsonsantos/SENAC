@@ -66,10 +66,16 @@ GROUP BY
 # 10 - Na tabela item_pedido armazena a quantidade que cada produto foi vendida nos pedidos, sendo assim, crie uma consulta SQL para listar o código identificador do produto, a quantidade de itens vendido, o valor de cada produto
 
 SELECT 
-    ITEM_PEDIDO .IDPRODUTO,
-    ITEM_PEDIDO.QTDE,
-    ITEM_PEDIDO.PRECO_UNITARIO
-FROM ITEM_PEDIDO;
+    SUM(ITEM_PEDIDO.QTDE),
+    ITEM_PEDIDO.PRECO_UNITARIO,
+    PRODUTO.IDPRODUTO
+FROM ITEM_PEDIDO 
+     INNER JOIN PRODUTO ON 
+    ITEM_PEDIDO.IDPRODUTO = PRODUTO.IDPRODUTO;
+GROUP BY
+    ITEM_PEDIDO.PRECO_UNITARIO,
+    PRODUTO.IDPRODUTO
+
 
 # 11 - Para saber o valor total de um item em um pedido você deve multiplicar o preco_unitario pela quantidade na tabela de item_pedido, sendo assim, crie uma consulta SQL para listar o codido do pedido, o código do produto, o preço unitário, a quantidade vendida e o valor total do item. Ordene o resultado pelo código do pedido e pelo código do produto 
 
@@ -220,3 +226,4 @@ FROM ITEM_PEDIDO
 GROUP BY 
     CLIENTE.SEXO,
     PRODUTO.CATEGORIA
+

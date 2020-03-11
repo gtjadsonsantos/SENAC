@@ -2,7 +2,7 @@ package src.exercicios;
 
 import java.util.Scanner;
 
-public class Exercicio {
+public class CalculoViajem {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
 
@@ -16,7 +16,7 @@ public class Exercicio {
         double tempo =  keyboard.nextInt();
 
         double distancia = velocidade * tempo;
-        double consumo = 1000 / quilometros ;
+        double consumo = distancia / quilometros ;
 
         System.out.println("Distância percorrida: " + distancia + " " +  "consumo: " + consumo);
 

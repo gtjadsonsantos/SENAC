@@ -1,0 +1,115 @@
+<mxfile host="" modified="2020-06-18T23:11:40.456Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.46.0 Chrome/78.0.3904.130 Electron/7.3.1 Safari/537.36" etag="RrC7Hq5wzfuSE9vQ-0e9" version="13.1.3">
+    <diagram id="6hGFLwfOUW9BJ-s0fimq" name="Page-1">
+        <mxGraphModel dx="2167" dy="1927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Times New Roman&amp;quot;; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Os diagramas de sequência visam determinar a sequência de eventos que ocorrem em determinado processo. Monte o diagrama de sequência do caso de uso Solicitar Viagem&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="-450" y="-980" width="550" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="DS - Solicitar Viagem" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=#000000;width=200;height=40;" parent="1" vertex="1">
+                    <mxGeometry x="-450" y="-860" width="1650" height="580" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Passageiro" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;labelBackgroundColor=#ffffff;outlineConnect=0;fillColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="-360" y="-750" width="20" height="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#000000;" parent="11" vertex="1">
+                    <mxGeometry x="5" y="86" width="10" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Interface Uber" style="shape=umlLifeline;participant=umlBoundary;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;labelBackgroundColor=#ffffff;outlineConnect=0;fillColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="-80" y="-750" width="50" height="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#000000;" parent="13" vertex="1">
+                    <mxGeometry x="20" y="86" width="10" height="254" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#000000;" parent="13" vertex="1">
+                    <mxGeometry x="30" y="260" width="10" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Controller Uber" style="shape=umlLifeline;participant=umlControl;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;labelBackgroundColor=#ffffff;outlineConnect=0;fillColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="-750" width="40" height="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value=":Viajem" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="630" y="-750" width="100" height="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="15" source="27" target="15" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#000000;" parent="15" vertex="1">
+                    <mxGeometry x="46" y="86" width="10" height="144" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Dados da viagem" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="17" target="23" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="260" y="-624"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.047;entryY=0.166;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="19" target="17" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-150" y="-610" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="Informa origem/destino e tipo carro da viagem" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="20" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1144" y="-3" relative="1" as="geometry">
+                        <mxPoint x="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.161;entryY=0.505;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="23" target="27" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="678" y="-617"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="buscaViajem(origem,destino,tipo de carro):String" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="28" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1796" y="1" relative="1" as="geometry">
+                        <mxPoint x="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="42" value="buscaMotorista()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.278;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="23" target="40" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="950" y="-480"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="255" y="-664" width="10" height="284" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="dadosViagem:String" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0.161;exitY=0.664;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="27" target="23" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="-570" as="sourcePoint"/>
+                        <mxPoint x="490" y="-570" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="38" value=":Motorista" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="-750" width="100" height="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="38" source="40" target="38" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#000000;" parent="38" vertex="1">
+                    <mxGeometry x="45" y="220" width="10" height="144" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="dadosMotorista: String" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=-0.218;exitY=0.865;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="40" target="23" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="640" y="-580" as="sourcePoint"/>
+                        <mxPoint x="560" y="-580" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="520" y="-570" as="sourcePoint"/>
+                        <mxPoint x="440" y="-570" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="50" value="Viagem" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=-0.246;exitY=0.645;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="23" target="17" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="-480" as="sourcePoint"/>
+                        <mxPoint x="120" y="-480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

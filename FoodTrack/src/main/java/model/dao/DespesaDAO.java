@@ -52,7 +52,6 @@ public class DespesaDAO {
 				+ despesaVO.getDataPagamento() + "','"
 				+ despesaVO.getCategoria() + "')";
 		
-		 System.out.println(query);
 		
 		try {
 			resultado = stmt.executeUpdate(query);

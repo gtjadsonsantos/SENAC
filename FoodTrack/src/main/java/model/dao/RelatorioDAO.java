@@ -84,7 +84,6 @@ public class RelatorioDAO {
 				+ "AND RECEITA.DATARECEITA <= '" + lancamentoUsuarioDTO.getDataFimPesquisa() + "' "
 				+ "GROUP BY USUARIO.IDUSUARIO";
 		
-		System.out.println(query);
 
 		try {
 			resultado = stmt.executeQuery(query);

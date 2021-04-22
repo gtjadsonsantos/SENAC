@@ -15,7 +15,6 @@
 <fullyQualifiedTypeName name="model.bo.UsuarioBO"/>
 <fullyQualifiedTypeName name="model.vo.LancamentoVO"/>
 <fullyQualifiedTypeName name="java.lang.Boolean"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="game.Jogador"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="game.Game"/>
@@ -27,7 +26,6 @@
 <fullyQualifiedTypeName name="model.bo.DespesaBO"/>
 <fullyQualifiedTypeName name="java.time.format.DateTimeFormatterBuilder"/>
 <fullyQualifiedTypeName name="javax.swing.JFrame"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="model.dao.DespesaDAO"/>
 <fullyQualifiedTypeName name="model.vo.ReceitaVO"/>
 <fullyQualifiedTypeName name="java.lang.Double"/>
@@ -39,6 +37,10 @@
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="model.dto.LancamentoUsuarioDTO"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="model.dao.Banco"/>
+<fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="model.vo.Aluno"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

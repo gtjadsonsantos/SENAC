@@ -12,6 +12,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/jadson/Downloads/projeto-final-senac-dd-2020-2"/>
+			<item value="/home/jadson/Downloads/repositories/projeto-final-senac-dd-2020-2"/>
+			<item value="/home/jadson/Downloads/repositories/SENAC-DD-2020-2-JADSON"/>
 			<item value="/home/jadson/Downloads/repositories/SENAC/SGDB/brModelo"/>
 			<item value="/home/jadson/Downloads/repositories/SENAC/task-poo/src/ed"/>
 			<item value="/home/jadson/Downloads/repositories/SENAC/FoodTrack"/>
